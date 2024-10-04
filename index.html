@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <div class="title">
+                <div class="icon"><img class="notelogo" src="./assets/note.png" /></div>
+                <div class="text">Notes</div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-icon"><img class="search_icon_logo" src="./assets/search.png" /></div>
+            <input class="searchbar" id="searchbar" (keyup)="applyFilter()" type="text" placeholder="Sterch notes..." />
+        </div>
+        <div class="empty-notes" id="empty-notes">
+            <div class="empty-notes-content">
+                <div class="info-icon">
+                    <div class="circle"></div>
+                    <img class="info_logo" src="./assets/info.png" />
+                </div>
+                <div class="info-content">
+                    No notes yet
+                </div>
+                <div class="info-description">
+                    Add a note to keep track of your learnings.
+                </div>
+            </div>
+            <div class="empty-notes-button">
+                <button class="add-new-btn" onclick="addNewNote()">
+                    <img class="addlogo" src="./assets/addnote.png" />
+                    <label class="add-note-label">Add Note</label>
+                </button>
+            </div>
+        </div>
+        <div class="note-list-container">
+            <button class="main-add-new-btn" id="main-add-new-btn" onclick="addNewNote()">Add New</button>
+            <ul class="notes-list" id="notes-list">
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

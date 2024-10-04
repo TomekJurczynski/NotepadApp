@@ -1,0 +1,382 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+    color: #1B1C1E;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 376px;
+    height: 748px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 376px;
+    height: 748px;
+}
+
+.header {
+    width: 376px;
+    height: 38px;
+    padding: 4px 16px;
+    gap: 8px;
+}
+
+.title {
+    display: flex;
+    width: 180px;
+    height: 30px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    gap: 10px;
+}
+
+.notelogo {
+    width: 15.33px;
+    height: 19px;
+    margin: 5px 4px;
+}
+
+.text {
+    width: 142px;
+    height: 30px;
+    padding: 4px;
+}
+
+.search {
+    width: 376px;
+    height: 40px;
+}
+
+.searchbar {
+    width: 289px;
+    height: 40px;
+    border-radius: 12px;
+    margin: 8px 16px;
+    padding-left: 48px;
+    background-color: #EEEFF0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-icon {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    height: 35px;
+    width: 35px;
+    margin: 4px;
+    text-align: center;
+}
+
+.circle {
+    height: 54px;
+    width: 54px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #EEEFF0;
+}
+
+.empty-notes {
+    margin: auto;
+    width: 303px;
+    height: 174px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.info-description {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.add-new-btn {
+    width: 137px;
+    height: 40px;
+    border: 1px solid #BCBCBD;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 16px;
+    gap: 10px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.addlogo {
+    box-sizing: border-box;
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+
+.add-note-label {
+    padding-left: 25px;
+}
+
+.info_logo {
+    box-sizing: border-box;
+    position: absolute;
+    left: 46.65%;
+    top: 23.9%;
+}
+
+.add-new-note,
+.edit-note {
+    height: 422px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 16px 0px #00000014;
+}
+
+.cancel-btn {
+    float: right;
+    padding: 8px;
+    background-color: white;
+    border: none;
+    color: #0F75B8;
+    font-size: 14px;
+
+}
+
+.new-note-label-container {
+    width: 321px;
+    height: 40px;
+    margin: 0 20px;
+    padding-top: 16px;
+}
+
+.note-title {
+    width: 321px;
+    height: 40px;
+    border-radius: 12px;
+    margin: 8px 16px;
+    padding-left: 14px;
+    background-color: #EEEFF0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.edit-note-title {
+    width: 321px;
+    height: 40px;
+    border-radius: 12px;
+    margin: 8px 16px;
+    padding: 8px 0 0 14px;
+    background-color: #EEEFF0;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.note-content {
+    width: 321px;
+    max-width: 323px;
+    height: 210px;
+    max-height: 210px;
+    border-radius: 12px;
+    margin: 8px 16px;
+    padding: 8px 0 8px 14px;
+    background-color: #EEEFF0;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    resize: none;
+}
+
+.note-content:focus,
+.searchbar:focus,
+.note-title:focus,
+.edit-note-title:focus {
+    background-color: white;
+    outline-color: black;
+}
+
+.save-note-btn {
+    float: right;
+    width: 70px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #6B3C9B;
+    color: white;
+    padding: auto;
+    margin: 4px 28px;
+}
+
+.note-list-container {
+    margin-top: 20px;
+}
+
+.notes-list {
+    display: none;
+    overflow: scroll;
+    scroll-behavior: auto;
+    height: 100%;
+    max-height: 584px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-add-new-btn {
+    width: 337px;
+    height: 40px;
+    margin: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #6B3C9B;
+    color: white;
+    display: none;
+}
+
+li {
+    width: 337px;
+    height: 120px;
+    max-height: 210px;
+    margin: 8px 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 16px 0px #00000012;
+}
+
+.note-preview-title,
+.note-preview-body,
+.note-preview-date {
+    width: 320px;
+    height: 24px;
+}
+
+.note-preview-date {
+    margin-bottom: 6px;
+}
+
+.note-preview-title-label {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 14px;
+    float: left;
+}
+
+.note-preview-body-label {
+    overflow: scroll;
+    scroll-behavior: auto;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    width: 300px;
+    height: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    padding: 2px 14px;
+    float: left;
+}
+
+.note-preview-date-label {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 2px 14px;
+    float: left;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    float: right;
+    padding: auto;
+    margin: 6px 4px;
+}
+
+.delete-popup {
+    z-index: 9999;
+    width: 344px;
+    height: 218px;
+    border-radius: 12px;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete-note-label {
+    text-align: left;
+    padding: 20px 16px;
+}
+
+.delete-note-description {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 16px;
+}
+
+.delete-note-buttons {
+    margin: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-delete-btn,
+.confirm-delete-btn {
+    float: right;
+    width: 40%;
+    height: 40px;
+    margin: 8px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+}
+
+.cancel-delete-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #BCBCBD
+}
+
+.confirm-delete-btn {
+    background-color: #6B3C9B;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
